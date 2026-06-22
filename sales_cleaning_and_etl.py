@@ -20,7 +20,7 @@ def generate_messy_sales_data(num_records=1000):
     transaction_ids = transaction_ids + transaction_ids[:50]
 
     # Dates spanning 3 years
-    date_range = pd.date_range(start="2023-01-01", end="2025-12-31", freq="H")
+    date_range = pd.date_range(start="2023-01-01", end="2025-12-31", freq="h")
     dates = np.random.choice(date_range, num_records)
 
     # Customer IDs (some nulls to simulate guest checkouts / entry failures)

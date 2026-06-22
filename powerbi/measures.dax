@@ -1,0 +1,5 @@
+Total Revenue = SUM(Fact_Sales[Revenue])
+Gross Profit = SUM(Fact_Sales[GrossProfit])
+Profit Margin % = DIVIDE([Gross Profit], [Total Revenue])
+Total Orders = DISTINCTCOUNT(Fact_Sales[TransactionID])
+Average Order Value = DIVIDE([Total Revenue], [Total Orders])
